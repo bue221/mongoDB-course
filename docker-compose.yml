@@ -9,6 +9,6 @@ services:
     restart: always
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
-      MONGO_INITDB_ROOT_PASSWORD: GHmn798@
+      MONGO_INITDB_ROOT_PASSWORD: ---YOUR_PASSWORD---
     volumes:
       - ./mongo_data:/data/db
