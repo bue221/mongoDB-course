@@ -1,0 +1,11 @@
+// Selección de la base de datos
+use("sample_training");
+
+// 1. Obtener todos los documentos de la colección zips
+// db.zips.find();
+
+// 2. Obtener todos los documentos de la colección zips donde el estado sea NY
+db.zips.find({ state: "NY" });
+
+// 3. Contar los documentos de la colección zips donde el estado sea NY
+db.zips.find({ state: "NY" }).count();
