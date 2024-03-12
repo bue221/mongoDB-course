@@ -1,0 +1,31 @@
+use("platzi_store");
+
+db.products.drop(); // Remove all documents from the collection
+
+// Insert many documents to products collection
+db.products.insertMany([
+  {
+    name: "Smartphone",
+    description: "This is a smartphone",
+    price: 100,
+    category: "Technology",
+  },
+  {
+    name: "Laptop",
+    description: "This is a laptop",
+    price: 500,
+    category: "Technology",
+  },
+  {
+    name: "Keyboard",
+    description: "This is a keyboard",
+    price: 50,
+    category: "Technology",
+  },
+  {
+    name: "Headphones",
+    description: "This is a headphones",
+    price: 50,
+    category: "Technology",
+  },
+]);
